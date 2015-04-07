@@ -20,20 +20,19 @@ character_event = { #Event for Earth to decide if they want to sell the lands, f
 	
 	option = {
 		name = EVTOPTAsalelands.01
+		c_cloudkonion = {
+			de_facto_liege = k_pegasopolis
+		}
 		any_independent_ruler = {
 			limit = {
-				has_landed_title - k_pegasopolis
+				has_landed_title = k_pegasopolis
 			}
-			grant_title_no_opinion = c_cloudkonion
 			wealth = -100
-			clr_character_flag = sale_cloudkonion
+			clr_character_flag = sale_lands
 		}
 	}
 	option = {
 		name = EVTOPTBsalelands.01
-		trigger = {
-			ai = no
-		}
 		any_independent_ruler = {
 			limit = {
 				has_landed_title = k_pegasopolis
@@ -54,21 +53,20 @@ character_event = { #Event for Earth to decide if they want to sell the lands, f
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAsalelands.01
+		name = EVTOPTAsalelands.02
+		c_poniala = {
+			de_facto_liege = k_pegasopolis
+		}
 		any_independent_ruler = {
 			limit = {
-				has_landed_title - k_pegasopolis
+				has_landed_title = k_pegasopolis
 			}
-			grant_title_no_opinion = c_poniala
 			wealth = -100
-			clr_character_flag = sale_poniala
+			clr_character_flag = sale_lands
 		}
 	}
 	option = {
 		name = EVTOPTBsalelands.02
-		trigger = {
-			ai = no
-		}
 		any_independent_ruler = {
 			limit = {
 				has_landed_title = k_pegasopolis
@@ -92,9 +90,6 @@ character_event = { #If the Earth declines, Pegasi get an event saying they decl
 		name = EVTOPTAsalelands.03
 	}
 	option = {
-		trigger = {
-			ai = no
-		}
 		name = EVTOPTBsalelands.03 #No sale? WAAAARRRRARARARARAR
 		add_claim = c_cloudkonion
 		add_claim = c_poniala
@@ -128,7 +123,7 @@ character_event = { #Now to clear the flag and let them ask again
 	
 	option = {
 		name = EVTOPTAsalelands.05
-		clr_character_flag = sale_poniala
+		clear_character_flag = sale_poniala
 	}
 }
 
@@ -144,10 +139,8 @@ character_event = { #War begins.
 	option = {
 		name = EVTOPTAsalelands.05
 		k_earth = {
-			reverse_war = {
-				target = k_earth
-				casus_belli = claim_all
-			}
+			reverse_war = ROOT
+			casus_belli = claim_all
 		}
 	}
 }
