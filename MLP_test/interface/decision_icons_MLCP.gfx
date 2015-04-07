@@ -20,5 +20,16 @@ spriteTypes = {
 		name = "GFX_create_k_earth"
 		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
 	}
-
+		spriteType = {
+		name = "GFX_reform_unicorn_religion"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}
+		spriteType = {
+		name = "GFX_reform_soarastrian"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}
+			spriteType = {
+		name = "GFX_reform_earth_religion"
+		texturefile = "gfx\\interface\\decision_icon_summerfair.dds"
+	}
 }
