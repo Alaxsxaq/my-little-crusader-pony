@@ -29,6 +29,10 @@ crystal_religion_reformed;Crystaline;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #;;;;;;;;;;;;;;
 earthpony_Rgroup;Earth Pony Religions;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 earth_religion;Earth Pony Rites;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_earth_religion;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_earth_religion_adj;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_earth_religion_reformed;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_earth_religion_reformed_adj;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 earth_religion_reformed;Earth Pony Rites;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #;;;;;;;;;;;;;;
 # Pegasus Religion Group;;;;;;;;;;;;;;
@@ -36,15 +40,20 @@ earth_religion_reformed;Earth Pony Rites;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 pegasus_Rgroup;Pegasi Religions;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 soarastrian;Soarastrian;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 soarastrian_DESC;The Sky Lord, Soaron, gave the gift of flight to the first Pegasi, deigning them as his servants.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-THE_EPICS;The Epics;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_soarastrian;The Archonate;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_soarastrian_adj;Archonate;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_soarastrian_reformed;The Archonate;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_soarastrian_reformed_adj;Archonate;FRENCH;GERMAN;;SPANISH;;;;;;;;;xTHE_EPICS;The Epics;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 soarastrian_reformed;Soarastrian;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #;;;;;;;;;;;;;;
 # Unicorn Religion Group;;;;;;;;;;;;;;
 #;;;;;;;;;;;;;;
 unicorn_Rgroup;Unicorn Religions;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 unicorn_religion;Ponitentum;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-d_ponitentum;The Grand Librarium;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-d_ponitentum_adj;Librarium;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_ponitentum;The Cult of Eordhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_ponitentum_adj;Eordhish;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_ponitentum_reformed;The Cult of Eordhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_ponitentum_reformed_adj;Eordhish;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 unicorn_religion_reformed;Ponitentum;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 unicorn_religion_DESC;The Pony Mother, Epona, gave unto unicorns magic, deigning them as her servants upon the world.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #;;;;;;;;;;;;;;

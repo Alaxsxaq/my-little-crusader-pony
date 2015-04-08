@@ -1,0 +1,446 @@
+#Ponitentum reformed
+narrative_event = {
+	id = rfrm.100
+	title = EVTTITLE_rfrm_100
+	desc = EVTDESC_rfrm_100
+	major = yes
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	major = yes
+	show_ROOT = yes
+	hide_new = yes
+	
+	only_rulers = yes
+	
+	immediate = {
+		set_parent_religion = { religion = unicorn_religion parent = unicorn_religion_reformed }
+		activate_title = { title = d_ponitentum_reformed status = yes }
+		d_ponitentum = {
+			holder_scope = {
+				d_ponitentum_reformed = {
+					grant_title = PREV
+				}
+				unsafe_religion = unicorn_religion # Use this effect with care
+				set_defacto_liege = ROOT
+			}
+			hidden_tooltip = { unsafe_destroy_landed_title = THIS }
+		}
+		activate_title = { title = d_ponitentum status = no }
+		
+		if = {
+			limit = { ai = no }
+			set_character_flag = reformed_ponitentum
+		}
+		any_courtier = {
+			limit = {
+				is_heresy_of = unicorn_religion_reformed
+				employer = { character = ROOT }
+			}
+			religion = unicorn_religion_reformed
+		}
+		any_dynasty_member = {
+			limit = {
+				is_heresy_of = unicorn_religion_reformed
+				is_playable = no
+			}
+			religion = unicorn_religion_reformed
+		}
+		any_vassal = {
+			limit = {
+				is_playable = no
+				is_heresy_of = unicorn_religion_reformed
+			}
+			religion = unicorn_religion_reformed
+		}
+		capital_scope = {
+			if = {
+				limit = { is_heresy_of = unicorn_religion_reformed }
+				religion = unicorn_religion_reformed
+			}
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA_rfrm_100" # The Reformer
+		trigger = { religion = unicorn_religion_reformed }
+	}
+		
+	option = {
+		name = "EVTOPTB_rfrm_100" # Rulers of the old Faith - Accept
+		trigger = {
+			is_heresy_of = unicorn_religion_reformed # The old religion has become a heresy of the Reformed one
+		}
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 5
+				any_liege = { religion = unicorn_religion_reformed }
+			}
+			modifier = {
+				factor = 2
+				same_realm = ROOT
+			}
+			modifier = {
+				factor = 5
+				trait = cynical
+			}
+			modifier = {
+				factor = 10
+				dynasty = ROOT
+			}
+			modifier = {
+				factor = 0.1
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+		}
+		
+		religion = unicorn_religion_reformed
+		
+		hidden_tooltip = {
+			any_courtier = {
+				limit = {
+					is_heresy_of = unicorn_religion_reformed
+					employer = { character = PREV }
+				}
+				religion = unicorn_religion_reformed
+			}
+			any_vassal = {
+				limit = {
+					is_playable = no
+					is_heresy_of = unicorn_religion_reformed
+				}
+				religion = unicorn_religion_reformed
+			}
+			capital_scope = {
+				if = {
+					limit = { is_heresy_of = unicorn_religion_reformed }
+					religion = unicorn_religion_reformed
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC_rfrm_100" # Rulers of the old Faith - Decline
+		trigger = {
+			is_heresy_of = unicorn_religion_reformed # The old religion has become a heresy of the Reformed one
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+			}
+		}
+		
+		tooltip = { religion = THIS }
+	}
+	option = {
+		name = "EVTOPTD_rfrm_100" # Other playable rulers
+		trigger = {
+			NOT = { religion = unicorn_religion_reformed }
+			NOT = { is_heresy_of = unicorn_religion_reformed }
+		}
+	}
+}
+
+#Soarastrianism Reformed
+narrative_event = {
+	id = rfrm.101
+	title = EVTTITLE_rfrm_101
+	desc = EVTDESC_rfrm_101
+	major = yes
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	major = yes
+	show_ROOT = yes
+	hide_new = yes
+	
+	only_rulers = yes
+	
+	immediate = {
+		set_parent_religion = { religion = soarastrian parent = soarastrian_reformed }
+		activate_title = { title = d_soarastrian_reformed status = yes }
+		d_soarastrian = {
+			holder_scope = {
+				d_soarastrian_reformed = {
+					grant_title = PREV
+				}
+				unsafe_religion = soarastrian # Use this effect with care
+				set_defacto_liege = ROOT
+			}
+			hidden_tooltip = { unsafe_destroy_landed_title = THIS }
+		}
+		activate_title = { title = d_soarastrian status = no }
+		
+		if = {
+			limit = { ai = no }
+			set_character_flag = reformed_soarastrian
+		}
+		any_courtier = {
+			limit = {
+				is_heresy_of = soarastrian_reformed
+				employer = { character = ROOT }
+			}
+			religion = soarastrian_reformed
+		}
+		any_dynasty_member = {
+			limit = {
+				is_heresy_of = soarastrian_reformed
+				is_playable = no
+			}
+			religion = soarastrian_reformed
+		}
+		any_vassal = {
+			limit = {
+				is_playable = no
+				is_heresy_of = soarastrian_reformed
+			}
+			religion = soarastrian_reformed
+		}
+		capital_scope = {
+			if = {
+				limit = { is_heresy_of = soarastrian_reformed }
+				religion = soarastrian_reformed
+			}
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA_rfrm_101" # The Reformer
+		trigger = { religion = soarastrian_reformed }
+	}
+		
+	option = {
+		name = "EVTOPTB_rfrm_101" # Rulers of the old Faith - Accept
+		trigger = {
+			is_heresy_of = soarastrian_reformed # The old religion has become a heresy of the Reformed one
+		}
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 5
+				any_liege = { religion = soarastrian_reformed }
+			}
+			modifier = {
+				factor = 2
+				same_realm = ROOT
+			}
+			modifier = {
+				factor = 5
+				trait = cynical
+			}
+			modifier = {
+				factor = 10
+				dynasty = ROOT
+			}
+			modifier = {
+				factor = 0.1
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+		}
+		
+		religion = soarastrian_reformed
+		
+		hidden_tooltip = {
+			any_courtier = {
+				limit = {
+					is_heresy_of = soarastrian_reformed
+					employer = { character = PREV }
+				}
+				religion = soarastrian_reformed
+			}
+			any_vassal = {
+				limit = {
+					is_playable = no
+					is_heresy_of = soarastrian_reformed
+				}
+				religion = soarastrian_reformed
+			}
+			capital_scope = {
+				if = {
+					limit = { is_heresy_of = soarastrian_reformed }
+					religion = soarastrian_reformed
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC_rfrm_101" # Rulers of the old Faith - Decline
+		trigger = {
+			is_heresy_of = soarastrian_reformed # The old religion has become a heresy of the Reformed one
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+			}
+		}
+		
+		tooltip = { religion = THIS }
+	}
+	option = {
+		name = "EVTOPTD_rfrm_101" # Other playable rulers
+		trigger = {
+			NOT = { religion = soarastrian_reformed }
+			NOT = { is_heresy_of = soarastrian_reformed }
+		}
+	}
+}
+
+#Earth Pony Rites Reformed
+narrative_event = {
+	id = rfrm.102
+	title = EVTTITLE_rfrm_102
+	desc = EVTDESC_rfrm_102
+	major = yes
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+	major = yes
+	show_ROOT = yes
+	hide_new = yes
+	
+	only_rulers = yes
+	
+	immediate = {
+		set_parent_religion = { religion = earth_religion parent = earth_religion_reformed }
+		activate_title = { title = d_earth_religion_reformed status = yes }
+		d_earth_religion = {
+			holder_scope = {
+				d_earth_religion_reformed = {
+					grant_title = PREV
+				}
+				unsafe_religion = earth_religion # Use this effect with care
+				set_defacto_liege = ROOT
+			}
+			hidden_tooltip = { unsafe_destroy_landed_title = THIS }
+		}
+		activate_title = { title = d_earth_religion status = no }
+		
+		if = {
+			limit = { ai = no }
+			set_character_flag = reformed_earth_religion
+		}
+		any_courtier = {
+			limit = {
+				is_heresy_of = earth_religion_reformed
+				employer = { character = ROOT }
+			}
+			religion = earth_religion_reformed
+		}
+		any_dynasty_member = {
+			limit = {
+				is_heresy_of = earth_religion_reformed
+				is_playable = no
+			}
+			religion = earth_religion_reformed
+		}
+		any_vassal = {
+			limit = {
+				is_playable = no
+				is_heresy_of = earth_religion_reformed
+			}
+			religion = earth_religion_reformed
+		}
+		capital_scope = {
+			if = {
+				limit = { is_heresy_of = earth_religion_reformed }
+				religion = earth_religion_reformed
+			}
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA_rfrm_102" # The Reformer
+		trigger = { religion = earth_religion_reformed }
+	}
+		
+	option = {
+		name = "EVTOPTB_rfrm_102" # Rulers of the old Faith - Accept
+		trigger = {
+			is_heresy_of = earth_religion_reformed # The old religion has become a heresy of the Reformed one
+		}
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 5
+				any_liege = { religion = earth_religion_reformed }
+			}
+			modifier = {
+				factor = 2
+				same_realm = ROOT
+			}
+			modifier = {
+				factor = 5
+				trait = cynical
+			}
+			modifier = {
+				factor = 10
+				dynasty = ROOT
+			}
+			modifier = {
+				factor = 0.1
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+		}
+		
+		religion = earth_religion_reformed
+		
+		hidden_tooltip = {
+			any_courtier = {
+				limit = {
+					is_heresy_of = earth_religion_reformed
+					employer = { character = PREV }
+				}
+				religion = earth_religion_reformed
+			}
+			any_vassal = {
+				limit = {
+					is_playable = no
+					is_heresy_of = earth_religion_reformed
+				}
+				religion = earth_religion_reformed
+			}
+			capital_scope = {
+				if = {
+					limit = { is_heresy_of = earth_religion_reformed }
+					religion = earth_religion_reformed
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC_rfrm_102" # Rulers of the old Faith - Decline
+		trigger = {
+			is_heresy_of = earth_religion_reformed # The old religion has become a heresy of the Reformed one
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+			}
+		}
+		
+		tooltip = { religion = THIS }
+	}
+	option = {
+		name = "EVTOPTD_rfrm_102" # Other playable rulers
+		trigger = {
+			NOT = { religion = earth_religion_reformed }
+			NOT = { is_heresy_of = earth_religion_reformed }
+		}
+	}
+}

@@ -19,6 +19,100 @@ d_ponitentum = {
 	dynasty_title_names = no
 }
 
+d_ponitentum_reformed = {
+	color = { 25 40 255 }
+	color2 = { 255 255 255 }
+	
+	title = "UNICORN_POPE"
+	foa = "UNICORN_POPEFOA"
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	landless = yes
+	
+	controls_religion = unicorn_religion_reformed
+	religion = unicorn_religion_reformed
+	
+	primary = yes
+	
+	dynasty_title_names = no
+}
+
+d_soarastrian = {
+	color = { 255 40 25 }
+	color2 = { 255 255 255 }
+	
+	title = "PEGASUS_POPE"
+	foa = "PEGASUS_POPEFOA"
+	
+	landless = yes
+	
+	controls_religion = soarastrian
+	religion = soarastrian
+	
+	primary = yes
+	
+	dynasty_title_names = no
+}
+
+d_soarastrian_reformed = {
+	color = { 255 40 25 }
+	color2 = { 255 255 255 }
+	
+	title = "PEGASUS_POPE"
+	foa = "PEGASUS_POPEFOA"
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	landless = yes
+	
+	controls_religion = soarastrian_reformed
+	religion = soarastrian_reformed
+	
+	primary = yes
+	
+	dynasty_title_names = no
+}
+
+d_earth_religion = {
+	color = { 0 130 0 }
+	color2 = { 255 255 255 }
+	
+	title = "EARTH_POPE"
+	foa = "EARTH_POPEFOA"
+	
+	landless = yes
+	
+	controls_religion = earth_religion
+	religion = earth_religion
+	
+	primary = yes
+	
+	dynasty_title_names = no
+}
+
+d_earth_religion_reformed = {
+	color = { 0 130 0 }
+	color2 = { 255 255 255 }
+	
+	title = "EARTH_POPE"
+	foa = "EARTH_POPEFOA"
+	
+	allow = {
+		always = no # Only by special decision
+	}
+	landless = yes
+	
+	controls_religion = earth_religion_reformed
+	religion = earth_religion_reformed
+	
+	primary = yes
+	
+	dynasty_title_names = no
+}
+
 #######################
 # Equestrian Kingdoms #
 #######################

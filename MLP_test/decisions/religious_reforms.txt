@@ -1,0 +1,106 @@
+decisions = {	
+	reform_unicorn_religion = {
+			is_high_prio = yes
+			
+			potential = {
+				is_ruler = yes
+				age = 16
+				religion = unicorn_religion
+				NOT = {
+					has_global_flag = reformed_unicorn_religion
+				}
+			}
+			
+			allow = {
+					religion = unicorn_religion
+					num_of_holy_sites = 3
+					piety = 750
+					religion_authority = 0.50
+								
+			}
+			
+			effect = {
+				# Reformer converts
+				religion = unicorn_religion_reformed
+				hidden_tooltip = {narrative_event = { id = rfrm.100 } }
+				set_global_flag = reformed_unicorn_religion
+			}
+					
+			revoke_allowed = {
+				always = no
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
+	reform_soarastrian = {
+			is_high_prio = yes
+			
+			potential = {
+				is_ruler = yes
+				age = 16
+				religion = soarastrian
+				NOT = {
+					has_global_flag = reformed_soarastrian
+				}
+			}
+			
+			allow = {
+					religion = soarastrian
+					num_of_holy_sites = 3
+					piety = 750
+					religion_authority = 0.50
+								
+			}
+			
+			effect = {
+				# Reformer converts
+				religion = soarastrian_reformed
+				hidden_tooltip = {narrative_event = { id = rfrm.101 } }
+				set_global_flag = reform_soarastrian
+			}
+					
+			revoke_allowed = {
+				always = no
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
+	reform_earth_religion = {
+			is_high_prio = yes
+			
+			potential = {
+				is_ruler = yes
+				age = 16
+				religion = earth_religion
+				NOT = {
+					has_global_flag = reformed_earth_religion
+				}
+			}
+			
+			allow = {
+					religion = earth_religion
+					num_of_holy_sites = 3
+					piety = 750
+					religion_authority = 0.50
+								
+			}
+			
+			effect = {
+				# Reformer converts
+				religion = earth_religion_reformed
+				hidden_tooltip = {narrative_event = { id = rfrm.102 } }
+				set_global_flag = reformed_earth_religion
+			}
+					
+			revoke_allowed = {
+				always = no
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}
